@@ -1,4 +1,7 @@
 html, body{
+    background-image: url('../gifs/cloud.gif');
+    font-family: "Comic Neue", cursive;
+    color: #5c4b50;
     margin: 0;
     height: 100%;
     display: flex;
@@ -6,15 +9,23 @@ html, body{
     align-items: center;
 }
 
+hr{
+    height: 10px;
+    width: 90%;
+    border:none;
+    background-image: url('../gifs/divider.gif');
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
 .main-container{
     width: 80vw;
-    background-color: black;
     margin: auto;
-    min-height: 80vh;
+    min-height: 90vh;
 
     display: grid;
-    grid-template-columns: 1fr 0.3fr;
-    grid-template-rows: 1fr 3fr;
+    grid-template-columns: 1fr 0.25fr;
+    grid-template-rows: 0.5fr 3fr;
     gap: 20px;
 
     grid-template-areas:
@@ -24,15 +35,70 @@ html, body{
 
 .header{
     grid-area:top;
-    background-color: red;
+    background-color: #f06161;
+    border-width: 3px;
+    border-style: solid;
+    font-size: 1.5em;
+    text-align: center;
 }
 
 .content{
     grid-area: left;
-    background-color: green;
+    background-color: #f2ebbe;
+    border-width: 3px;
+    border-style: solid;
+    padding: 20px;
 }
 
 .navigation{
     grid-area: right;
-    background-color: blue;
+    background-color: #f3b562;
+    border-width: 3px;
+    border-style: solid;
+    text-align: center;
+}
+
+.navigation ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 80%;
+}
+
+.navigation li a{
+    display: block;
+    background-color: #8dbfb2;
+    padding: 10px;
+    margin: 20px;
+
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #f2ebbe; 
+    text-align: center;
+    transition-duration: 0.2s;
+}             
+
+.navigation a:hover{
+    background-color: #5c4b50;
+    color: #8dbfb2;
+    transition-duration: 0.2s;
+}
+
+@media (max-width: 1024px){
+    .main-container{
+        grid-template-areas:
+        "top"
+        "right"
+        "left"
+    }
+
+    .navigation ul{
+        display:grid;
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
 }
