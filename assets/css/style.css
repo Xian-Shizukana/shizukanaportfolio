@@ -93,12 +93,17 @@ hr{
         grid-template-areas:
         "top"
         "right"
-        "left"
+        "left";
+        grid-template-rows: 0.25fr 0.5fr 1fr;
     }
 
     .navigation ul{
         display:grid;
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
         height: auto;
+    }
+
+    .navigation li a{
+        margin: 10px;
     }
 }
