@@ -49,6 +49,18 @@ hr.scrollbar{
     border-width: 3px;
     border-style: solid;
     padding: 20px;
+    overflow:auto;
+    max-height: 70vh;
+    scrollbar-color: #f3b562 #f2ebbe;
+    scrollbar-width: thin;
+}
+
+.content-box{
+    display: flow-root;
+    background-color: #e5c9c9;
+    border: 2px white solid;
+    padding: 10px;
+    height: auto;
 }
 
 .navigation{
