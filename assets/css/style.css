@@ -7,9 +7,10 @@ html, body{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 24px;
 }
 
-hr{
+hr.scrollbar{
     height: 10px;
     width: 90%;
     border:none;
@@ -20,7 +21,7 @@ hr{
 
 .main-container{
     width: 80vw;
-    margin: auto;
+    
     min-height: 90vh;
 
     display: grid;
@@ -65,18 +66,17 @@ hr{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 80%;
 }
 
 .navigation li a{
     display: block;
     background-color: #8dbfb2;
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
 
     text-decoration: none;
-    font-size: 1.5em;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 1000;
     color: #f2ebbe; 
     text-align: center;
     transition-duration: 0.2s;
