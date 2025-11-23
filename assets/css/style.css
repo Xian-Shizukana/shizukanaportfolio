@@ -10,7 +10,12 @@ html, body{
     font-size: 24px;
 }
 
-hr.scrollbar{
+hr{
+    border-top: 5px dotted #5c4b50;
+    color: #5c4b50;
+}
+
+.scrollbar{
     height: 10px;
     width: 90%;
     border:none;
