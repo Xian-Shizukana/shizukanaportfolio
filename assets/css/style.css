@@ -63,7 +63,7 @@ hr{
 .content-box{
     display: flow-root;
     background-color: #e5c9c9;
-    border: 2px white solid;
+    border: 3px solid #5c4b50;
     padding: 10px;
     height: auto;
 }
