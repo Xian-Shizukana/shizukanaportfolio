@@ -66,6 +66,7 @@ hr{
     border: 3px solid #5c4b50;
     padding: 10px;
     height: auto;
+    text-align: justify;
 }
 
 .navigation{
